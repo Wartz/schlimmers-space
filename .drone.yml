@@ -1,13 +1,12 @@
----
 kind: pipeline
 type: ssh
 name: default
 
 server:
-  host: 1.2.3.4
-  user: root
+  host: 10.10.1.46
+  user: joe
   password:
-    from_secret: password
+    from_secret: joe_password
 
 steps:
 - name: greeting
